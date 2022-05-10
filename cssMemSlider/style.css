@@ -16,6 +16,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0 30px;
   background-color: #f5f5f5;
   font-family: 'Comfortaa';
   font-weight: 700;
@@ -36,6 +37,14 @@ body {
   margin: 0 auto;
   max-width: 500px;
   overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+input {
+  margin: 0;
+  width: 100%;
+  opacity: 0;
+  scroll-snap-align: start;
 }
 
 .slider-viewport {
@@ -110,7 +119,8 @@ body {
   cursor: pointer;
 }
 
-.label:hover span {
+.label:hover span,
+.label:active span {
   cursor: pointer;
   background-color: #525252;
   transition: 0.5s;
@@ -129,9 +139,4 @@ input#button-three:checked ~ .slider-bottom .navigation .link-item .link-button-
 input#button-four:checked ~ .slider-bottom .navigation .link-item .link-button-four span {
   border: #c2c2c2 3px solid;
   background-color: transparent;
-}
-input {
-  margin: 0;
-  width: 100%;
-  opacity: 0;
 }
