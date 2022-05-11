@@ -164,7 +164,7 @@ input#button-one:checked ~ .slider-bottom .navigation .link-item .link-button-on
 input#button-two:checked ~ .slider-bottom .navigation .link-item .link-button-two span,
 input#button-three:checked ~ .slider-bottom .navigation .link-item .link-button-three span,
 input#button-four:checked ~ .slider-bottom .navigation .link-item .link-button-four span {
-  border: #c2c2c2 0.2vh solid;
+  border: #c2c2c2 0.3vh solid;
   background-color: transparent;
 }
 
