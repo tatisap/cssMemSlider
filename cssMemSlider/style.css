@@ -41,9 +41,9 @@ body {
 .slider-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 0 1fr auto;
+  grid-template-rows: 0 1fr max-content;
   margin: 0 auto;
-  max-width: 40%;
+  max-width: 30%;
   overflow: hidden;
 }
 
@@ -165,4 +165,66 @@ input#button-three:checked ~ .slider-bottom .navigation .link-item .link-button-
 input#button-four:checked ~ .slider-bottom .navigation .link-item .link-button-four span {
   border: #c2c2c2 0.2rem solid;
   background-color: transparent;
+}
+
+@media (max-width: 1920px) {
+  .slider-wrapper {
+    max-width: 40%;
+  }
+  .link-item {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .slider-wrapper {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider-wrapper {
+    max-width: 60%;
+  }
+  .slider-bottom {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .navigation {
+    align-self: center;
+    height: 4rem;
+  }
+  .content {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 830px) {
+  .title {
+    font-size: 2rem;
+  }
+  .slider-wrapper {
+    max-width: 65%;
+  }
+  .navigation {
+    width: 45%;
+    gap: 10%;
+  }
+}
+
+@media (max-width: 680px) {
+  .title {
+    font-size: 1.7rem;
+  }
+  .slider-wrapper {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .navigation {
+    width: 70%;
+  }
 }
