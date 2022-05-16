@@ -168,7 +168,7 @@ input#button-four:checked ~ .slider-bottom .navigation .link-item .link-button-f
   background-color: transparent;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .title {
     font-size: 2.2rem;
   }
@@ -182,5 +182,11 @@ input#button-four:checked ~ .slider-bottom .navigation .link-item .link-button-f
   .content {
     align-self: flex-start;
     width: 100%;
+  }
+}
+
+@media (max-height: 600px) {
+  .text {
+    font-size: 3vh;
   }
 }
